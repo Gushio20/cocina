@@ -1,0 +1,279 @@
+<html>
+<head>
+    <title>Carta</title>
+     <style>
+        body {
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+
+        header {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: crimson;
+        }
+
+        h2 {
+            color: darkred;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .columna-platillos {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            flex: 1;
+            width: 100%;
+        }
+
+        .columna-multimedia {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            flex: 1;
+            width: 100%;
+        }
+
+        .platillos-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .platillo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 12px;
+            width: 100%;
+        }
+
+        .platillo-item h3 {
+            color: crimson;
+            font-size: 24px;
+            margin: 0 0 10px 0;
+        }
+
+        hr {
+            width: 100%;
+            border: 0;
+            border-top: 2px solid crimson;
+            margin: 10px 0;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: crimson;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+            width: 100%;
+        }
+
+        table:hover {
+            box-shadow: 6px 12px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        th, tr, td {
+            border: 1px solid black;
+            padding: 10px; 
+            text-align: left;
+        }
+
+        th {
+            background-color: darkred;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5d1a4;
+            color: black;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        img:hover {
+            box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.35); 
+        }
+
+        .ben{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px crimson;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .navegacion-retorno {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: darkred;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); 
+        }
+
+        a:hover {
+            background-color: crimson;
+            box-shadow: 0px 6px 12px rgba(220, 20, 60, 0.4);
+        }
+
+        .ignacio {
+            color: darkred; 
+            font-family: 'Comic Sans MS', sans-serif; 
+            font-size: 16px; 
+            text-align: center;
+        }
+
+        .ignacio:hover {
+            color: crimson;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: auto;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Carta del Restaurant</h1> 
+    </header>
+
+    <main>
+        <section class="columna-platillos">
+            <ul class="platillos-lista">
+                <li class="platillo-item">
+                    <h3>Milanesa argentina</h3>
+                    <figure style="margin: 0; padding: 0;">
+                        <img src="milanesa.jpg" width="500" height="500" alt="Milanesa argentina tradicional"> 
+                    </figure>
+                </li>
+                <li class="platillo-item">
+                    <h3>Dumpling</h3>
+                    <figure style="margin: 0; padding: 0;">
+                        <img src="china.jpg" width="500" height="500" alt="Dumplets al vapor"> 
+                    </figure>
+                </li>
+                <li class="platillo-item">
+                    <h3>Carne</h3>
+                    <figure style="margin: 0; padding: 0;">
+                        <img src="7.png" width="500" height="500" alt="Corte de carne premium a la parrilla"> 
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <div class="columna-multimedia">
+            <h2>Video enseñando receta de milanesa argentina</h2>
+            <video controls class="ben" width="400" height="300">
+                <source src="videoplayback (1).mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            
+            <hr>
+            
+            <h2>Audio de nuestro filete siendo cocinado</h2>
+            <audio controls class="lojo">
+                <source src="oxidvideos-sizzling-cooking-meat-522506.mp3" type="audio/mpeg">
+                Tu navegador no soporta audios.
+            </audio>
+            
+            <hr>
+            
+            <h2>Tabla de nuestros precios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platillo</th>
+                        <th>Descripción</th>
+                        <th>Precio (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Milanesa argentina</td>
+                        <td>Carne empanizada, frita y crujiente</td>
+                        <td>39,99</td>
+                    </tr>
+                    <tr>
+                        <td>Dumplings</td>
+                        <td>Masa rellena cocida al vapor o frita</td>
+                        <td>59,99</td>
+                    </tr>
+                    <tr>
+                        <td>Filete</td>
+                        <td>Corte de carne de res premium a la parrilla</td>
+                        <td>79,99</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <div class="navegacion-retorno">
+                <h2>Volver al menú</h2>
+                <a href="Menu.html">
+                    Volver
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="ignacio">&copy; 2026 Restaurant Menu. Todos los derechos reservados por Mateo Millar.</p>
+    </footer>
+
+</body>
+</html>

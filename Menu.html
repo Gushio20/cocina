@@ -1,0 +1,110 @@
+<html>
+<head> 
+    <title>Restaurant</title> 
+    <style> 
+    
+        body {
+            background-color: bisque;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        } 
+        
+        h1 { 
+            color: crimson; 
+            text-align: center;
+        } 
+        
+        h2 {
+            color: darkred; 
+            font-family: 'Comic Sans MS', sans-serif; 
+            font-size: 18px; 
+            margin: 10px; 
+        } 
+        
+        h2:hover {
+            color: crimson;
+        }
+
+        
+        .contenedor-menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 20px 0;
+        }
+        
+        
+        .tarjeta {
+            width: 260px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .menu-effect {
+            border-radius: 8px;
+            border: 2px solid crimson;
+        }
+
+        .ignacio {
+            color: darkred; 
+            font-family: 'Comic Sans MS', sans-serif; 
+            font-size: 20px; 
+            margin: 20px; 
+        }
+        
+        .ignacio:hover {
+            color: crimson;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style> 
+</head>
+<body> 
+
+<header>
+    <h1>Menu del Restaurant</h1> 
+    <hr>
+ </header>
+    <main>
+        <!-- 1. NUEVA ETIQUETA: <section> para agrupar el contenido principal del menú -->
+        <section>
+            <!-- 2. NUEVA ETIQUETA: <nav> porque este bloque contiene los enlaces de navegación principales -->
+            <nav class="contenedor-menu">
+                <div class="tarjeta">
+                    <h2>Click aqui para reservar</h2>
+                    <a href="Reserva.html">
+                        <img class="menu-effect" src="booking-calendar-icon-reservations-vector.jpg" width="240" height="320">
+                    </a>
+                </div>
+                <div class="tarjeta">
+                    <h2>Click aqui para la carta</h2>
+                    <a href="carta de platillos.html">
+                        <img class="menu-effect" src="letter-mail-icon-symbol-sign-isolate-on-white-background-illustration-eps-10-free-vector.jpg" width="240" height="320">
+                    </a>
+                </div>
+                <div class="tarjeta">
+                    <h2>Click aqui para el staff</h2>
+                    <a href="Personal.html">
+                        <img class="menu-effect" src="branding-personal.jpg" width="240" height="320">
+                    </a>
+                </div>
+                <div class="tarjeta">
+                    <h2>Click aqui para la historia</h2>
+                    <a href="historia.html">
+                        <img class="menu-effect" src="composicion-libros-libro-abierto_23-2147690555.avif" width="240" height="320">
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p class="ignacio">&copy; 2026 Restaurant Menu. Todos los derechos reservados por Mateo Millar.</p>
+    </footer>
+</body>
